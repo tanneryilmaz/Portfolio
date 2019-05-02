@@ -1,0 +1,19 @@
+<html>
+   <head>
+     <script type="text/javascript" src="Luhn_Algorithm.js"></script>
+      <script type = "text/javascript">
+        function validate() {
+           var creditCardNumber = prompt("Enter credit card number: ", "Enter credit card number here");
+           document.write("Your number: " + creditCardNumber + ", is " + isValid(creditCardNumber) + "!");
+        }
+      </script>
+   </head>
+
+   <body>
+     <head>Is you credit card number valid? Use this webpage to find out.</head>
+      <p>Click the button below to begin validation process.</p>
+      <form>
+         <input type = "button" value = "Click Me" onclick = "validate();" />
+      </form>
+   </body>
+</html>
