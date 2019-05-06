@@ -1,0 +1,1 @@
+This is an implementation of the Luhn algorithm. Valid credit card numbers have certain numerical properties which can be used to verify their validity. This algorithm determines whether or not a given credit card number is valid. 

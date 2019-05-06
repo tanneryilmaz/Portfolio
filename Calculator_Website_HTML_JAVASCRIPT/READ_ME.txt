@@ -1,1 +1,0 @@
-I made this website for fun during summer of 2018. 

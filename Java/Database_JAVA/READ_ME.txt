@@ -1,0 +1,2 @@
+This is a program which allows the scouts at a soccer team tryout to log players' information. The program should be
+used in an IDE console. Upon running the program, a menu will appear in the console. Select a menu option and follow the prompts. To terminate the program, enter the letter 'q' into the console and press enter.  

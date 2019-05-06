@@ -1,6 +1,3 @@
-# Code from here: https://stackoverflow.com/questions/20025784/how-to-visualize-3d-delaunay-triangulation-in-python
-# https://stackoverflow.com/questions/3810865/matplotlib-unknown-projection-3d-error
-
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -13,6 +10,7 @@ class PointCharge:
         
         
 def plot_delaunay_3D(ax, points, tri):
+    '''Plots 3 dimensional Delaunay triangulations'''
     edges = collect_edges(tri)
     x = np.array([])
     y = np.array([])
@@ -67,12 +65,13 @@ def generate_rand_points(dimension_amplitudes, num_points):
 
 def random_linear_points(x_grid_amp, y_grid_amp, num_points, point_charge, offset):
     '''returns linearly spaced points emanating outward from point charge. offset parameter represents distance of the first data
-    point from point charge. If offset is small, the first test data point will basically be very close to the point charge. num_points
-    is the number of test points you would like to create.'''
+    point from point charge. If offset is small, the first test data point will be very close to the point charge. num_points
+    is the number of test points to be created.'''
     x = np.linspace(point_charge.charge_loc[0] + offset, 0.8 * x_grid_amp, num_points)
     y = np.linspace(point_charge.charge_loc[1] + offset, 0.8 * y_grid_amp, num_points)
     
     return np.array(list(zip(x, y)))
+
 
 def random_circular_points(num_points, x_grid_amp, y_grid_amp):
     theta = np.linspace(0, 2*np.pi, num_points)
