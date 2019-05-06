@@ -2,7 +2,7 @@ This code was written as part of a Numerical Dynamics Simulations class at Tulan
 
 A Delaunay triangulation is a triangulation of a point set such that no point in the set lies in the circumcircle of any triangle in the triangulation. Delaunay triangulations have properties which make them good candidates for use as interpolation grids. The Delaunay triangulation can be constructed for point sets in 2, 3, or any higher dimensional space.
 
-Delaunay triangulations can be used for:
+Delaunay triangulation can be used for:
  - Image compression
  - Facial warping (Snapchat filters)
  - Finite Element Analysis
